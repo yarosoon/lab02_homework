@@ -1,17 +1,15 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main() {
-    string name;  
+    string name;  // Создаем строку для хранения имени пользователя
 
-    
-    cout << "Введите имя пользователя: ";
-    getline(cin, name);  
+    // Запрашиваем имя пользователя
+    std::cout << "Введите имя пользователя: ";
+    std::getline(std::cin, name);  // Читаем строку целиком, включая пробелы
 
-    
-    cout << "Hello world from " << name << "!" << endl;
+    // Печатаем пожелание
+    std::cout << "Hello world from " << name << "!" << std::endl;
 
     return 0;
 }
